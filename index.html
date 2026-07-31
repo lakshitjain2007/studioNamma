@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branding, Design & Webflow Development | Studio Namma</title>
+  <meta name="description" content="At Studio Namma, we think, craft, and design bold websites for ambitious brands. We’re experts in branding, creative design, and Webflow development." />
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Mickey Mouse Pointer & Hover Cursor -->
+  <div id="custom-cursor" class="custom-cursor">
+    <span class="cursor-text"></span>
+  </div>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">STUDIO NAMMA</div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Awwwards Fixed Badge Ribbon -->
+  <div class="awwwards-ribbon">
+    <a href="https://www.awwwards.com/sites/studio-namma" target="_blank" rel="noopener">
+      <svg width="53" height="171" viewBox="0 0 53 171" fill="none">
+        <path d="M0 0h53.08v171.358H0z" fill="var(--text)"/>
+        <path d="M20.048 153.585v-2.002l6.752-3.757h-6.752v-1.9h10.23v2.002l-6.752 3.757h6.752v1.9zM29.899 142.382a3.317 3.317 0 0 1-1.359 1.293c-.575.297-1.223.446-1.944.446-.721 0-1.369-.149-1.944-.446a3.317 3.317 0 0 1-1.359-1.293c-.331-.564-.497-1.232-.497-2.003 0-.769.166-1.437.497-2.002a3.332 3.332 0 0 1 1.359-1.294c.575-.297 1.224-.445 1.944-.445.722 0 1.369.148 1.944.445a3.326 3.326 0 0 1 1.359 1.294c.33.565.496 1.233.496 2.002.001.77-.166 1.438-.496 2.003" fill="var(--background)"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Top Fixed Navigation -->
+  <nav class="nav-top">
+    <div class="nav-container">
+      <div class="nav-top-left">
+        <a href="#hero" class="link-mono-slide">
+          <span class="line-first">Studio Namma</span>
+          <span class="line-second">Studio Namma</span>
+        </a>
+        <button id="theme-toggle" class="link-mono-slide">
+          <span class="line-first theme-label">Dark mode</span>
+          <span class="line-second theme-label">Dark mode</span>
+        </button>
+      </div>
+
+      <div class="nav-top-middle">
+        <button id="menu-toggle" class="link-mono-slide">
+          <span class="line-first menu-label">Menu</span>
+          <span class="line-second menu-label">Open</span>
+        </button>
+      </div>
+
+      <div class="nav-top-right">
+        <button id="contact-toggle" class="link-mono-slide">
+          <span class="line-first">Let's talk!</span>
+          <span class="line-second">Contact us</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bottom Fixed Time Zone Clock Bar -->
+  <nav class="nav-bottom">
+    <div class="nav-bottom-container">
+      <div>We craft bold design & clean Webflow.</div>
+      <div class="cities-list">
+        <div class="city-wrapper">
+          <span>Paris, France</span>
+          <span id="time-paris">12:00 PM</span>
+        </div>
+        <div class="city-wrapper">
+          <span>Los Angeles, CA</span>
+          <span id="time-la">03:00 AM</span>
+        </div>
+        <div class="city-wrapper">
+          <span>Barcelona, Spain</span>
+          <span id="time-barcelona">12:00 PM</span>
+        </div>
+        <div class="city-wrapper">
+          <span>Hong Kong, China</span>
+          <span id="time-hk">06:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Navigation Menu Overlay -->
+  <div id="nav-menu-overlay" class="nav-menu-overlay">
+    <div class="menu-grid">
+      <div class="menu-links-col">
+        <a href="#hero" class="menu-item-link" data-preview="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80">
+          <span class="menu-num">01</span>
+          <span>Home</span>
+        </a>
+        <a href="#projects" class="menu-item-link" data-preview="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80">
+          <span class="menu-num">02</span>
+          <span>Work</span>
+        </a>
+        <a href="#services" class="menu-item-link" data-preview="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80">
+          <span class="menu-num">03</span>
+          <span>Services</span>
+        </a>
+        <a href="#cta" class="menu-item-link" data-preview="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80">
+          <span class="menu-num">04</span>
+          <span>Approach</span>
+        </a>
+        <a href="#contact-drawer" id="menu-contact-trigger" class="menu-item-link" data-preview="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80">
+          <span class="menu-num">05</span>
+          <span>Contact</span>
+        </a>
+      </div>
+
+      <div class="menu-info-col">
+        <div class="menu-info-block">
+          <h4>GET IN TOUCH</h4>
+          <a href="mailto:hello@studionamma.com">hello@studionamma.com</a>
+          <p style="margin-top: 0.5rem;">+33 7 80 97 92 69</p>
+        </div>
+        <div class="menu-info-block">
+          <h4>FOLLOW US</h4>
+          <p><a href="https://www.instagram.com/studio.namma" target="_blank" rel="noopener">Instagram</a> &bull; <a href="https://www.linkedin.com/company/studio-namma" target="_blank" rel="noopener">LinkedIn</a> &bull; <a href="https://dribbble.com/studionamma" target="_blank" rel="noopener">Dribbble</a></p>
+        </div>
+      </div>
+    </div>
+    <div id="menu-hover-preview" class="menu-hover-preview"></div>
+  </div>
+
+  <!-- Contact Drawer Modal -->
+  <div id="contact-drawer" class="contact-drawer">
+    <div class="contact-overlay-bg" id="contact-backdrop"></div>
+    <div class="contact-content-card">
+      <div class="contact-header">
+        <button id="close-contact" class="link-mono-slide">
+          <span class="line-first">Close</span>
+          <span class="line-second">Close</span>
+        </button>
+      </div>
+
+      <div id="contact-form-block">
+        <h2 class="contact-title">Let's work<br><span style="color: var(--accent-blue);">together</span></h2>
+
+        <form id="contact-form" class="contact-form-grid">
+          <div class="form-field-wrapper">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Chuck Norris" required />
+          </div>
+
+          <div class="form-field-wrapper">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="walker@texas-rangers.com" required />
+          </div>
+
+          <div class="form-field-wrapper">
+            <label for="contact-phone">Phone</label>
+            <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="XX XX XX XX XX" />
+          </div>
+
+          <div class="form-field-wrapper">
+            <label>Interest</label>
+            <div class="radio-group">
+              <label class="radio-btn-label">
+                <input type="radio" name="interest" value="Design" checked />
+                <span>Design</span>
+              </label>
+              <label class="radio-btn-label">
+                <input type="radio" name="interest" value="Webflow development" />
+                <span>Webflow development</span>
+              </label>
+              <label class="radio-btn-label">
+                <input type="radio" name="interest" value="Full package" />
+                <span>Full package</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-field-wrapper">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4" class="form-textarea" placeholder="Give us a short project brief, deadline, budget, etc." required></textarea>
+          </div>
+
+          <button type="submit" class="contact-submit-btn">Send &rarr;</button>
+        </form>
+      </div>
+
+      <!-- Success Screen -->
+      <div id="contact-success" class="contact-success-state">
+        <h2 class="contact-title">Thank<br><span style="color: var(--accent-blue);">you!</span></h2>
+        <p style="font-size: 1.2rem; color: var(--text-muted);">Submission received. We will be in touch shortly!</p>
+        <button id="close-success" class="contact-submit-btn">Continue Browsing</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="section-hero">
+      <div class="container">
+        <div class="hero-title-box">
+          <h1 class="hero-display-h1">
+            We think<br>
+            craft and<br>
+            design
+          </h1>
+        </div>
+
+        <div class="hero-video-wrapper">
+          <video autoplay loop muted playsinline poster="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68dfa4ffe42ad829f9d5bd31_Home-Hero-lightV5-poster-00001.jpg">
+            <source src="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68dfa4ffe42ad829f9d5bd31_Home-Hero-lightV5-transcode.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showreel Video Section -->
+    <section class="section-showreel">
+      <div class="container">
+        <div class="section-mono-tag">[ 2026 SHOWREEL ]</div>
+        <div class="showreel-container" data-cursor-hover="Play Showreel">
+          <iframe src="https://player.vimeo.com/video/1127104834?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Intro Section -->
+    <section class="section-intro">
+      <div class="container">
+        <div class="section-mono-tag">[ Creative studio building premium Brands ]</div>
+        <h2 class="intro-quote-text">
+          It’s never “just a website”. Every <span class="intro-hover-span" data-img="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985/68d143844e199c5fe25893c6_Details%201.webp">detail</span> matters. We craft digital experiences. Your design. Our obsession. Your brand. Our <span class="intro-hover-span" data-img="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985/68d1446a128c7643746e47f9_Playground1.webp">playground</span>.
+        </h2>
+      </div>
+      <div id="intro-floating-preview" class="intro-floating-preview"></div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects" class="section-projects">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <div class="section-mono-tag">[ Selected projects ]</div>
+            <h2 class="display-section-title">Playground</h2>
+          </div>
+        </div>
+
+        <div class="projects-masonry-grid">
+          
+          <!-- Project 1: Matera -->
+          <article class="project-item-card" data-cursor-hover="Matera">
+            <div class="project-visual-box">
+              <img src="https://cdn.prod.website-files.com/67aca0c732855fc2a1f2c4fc/68bb0be00336912e360b324f_main%20case%20cover%20matera%20(1).webp" alt="Matera" class="project-cover-img" />
+              <video class="project-hover-video" autoplay loop muted playsinline>
+                <source src="https://studionamma.vercel.app/videos/matera/matera-highlight-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-details-row">
+              <h3 class="project-name-h3">Matera</h3>
+              <span class="project-tag-mono">Le syndic du 21e siècle</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Chance -->
+          <article class="project-item-card" data-cursor-hover="Chance">
+            <div class="project-visual-box">
+              <img src="https://cdn.prod.website-files.com/67aca0c732855fc2a1f2c4fc/68bae5b9f22246585fe911d0_chance-cover-desktop.webp" alt="Chance" class="project-cover-img" />
+              <video class="project-hover-video" autoplay loop muted playsinline>
+                <source src="https://studionamma.vercel.app/videos/chance/chance-cover.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-details-row">
+              <h3 class="project-name-h3">Chance</h3>
+              <span class="project-tag-mono">Rencontrer l'amour pro</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Silvr -->
+          <article class="project-item-card" data-cursor-hover="Silvr">
+            <div class="project-visual-box">
+              <img src="https://cdn.prod.website-files.com/67aca0c732855fc2a1f2c4fc/68beb68ead192a24f9ad4372_silvr%20case%20cover%20(1).webp" alt="Silvr" class="project-cover-img" />
+              <video class="project-hover-video" autoplay loop muted playsinline>
+                <source src="https://studionamma.vercel.app/videos/silvr/silvr-highlight.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-details-row">
+              <h3 class="project-name-h3">Silvr</h3>
+              <span class="project-tag-mono">Supercharge business loan</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Intramuros -->
+          <article class="project-item-card" data-cursor-hover="Intramuros">
+            <div class="project-visual-box">
+              <img src="https://cdn.prod.website-files.com/67aca0c732855fc2a1f2c4fc/68bb1c497ad001257f2e727f_intramuros-cover-case-home%20(1).webp" alt="Intramuros" class="project-cover-img" />
+              <video class="project-hover-video" autoplay loop muted playsinline>
+                <source src="https://studionamma.vercel.app/videos/intramuros/intramuros-highlight.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-details-row">
+              <h3 class="project-name-h3">Intramuros</h3>
+              <span class="project-tag-mono">Design Magazine</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-services">
+      <div class="container">
+        <div class="section-mono-tag">[ Services ]</div>
+        <h2 class="display-section-title">Capabilities</h2>
+
+        <div class="services-list-container">
+          
+          <div class="service-row-item" data-media="https://images.unsplash.com/photo-1542744094-3a31b272c490?auto=format&fit=crop&w=600&q=80">
+            <div class="service-title-display">Art direction</div>
+            <div class="service-meta-tag">Storytelling</div>
+          </div>
+
+          <div class="service-row-item" data-media="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80">
+            <div class="service-title-display">Branding</div>
+            <div class="service-meta-tag">Identity</div>
+          </div>
+
+          <div class="service-row-item" data-media="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80">
+            <div class="service-title-display">Webflow</div>
+            <div class="service-meta-tag">Integration</div>
+          </div>
+
+          <div class="service-row-item" data-media="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80">
+            <div class="service-title-display">UI/UX Design</div>
+            <div class="service-meta-tag">Wireframes</div>
+          </div>
+
+          <div class="service-row-item" data-media="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80">
+            <div class="service-title-display">GSAP animations</div>
+            <div class="service-meta-tag">Transitions</div>
+          </div>
+
+          <div class="service-row-item" data-media="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80">
+            <div class="service-title-display">Advertising</div>
+            <div class="service-meta-tag">Creative Ads</div>
+          </div>
+
+        </div>
+      </div>
+      <div id="services-hover-preview" class="services-hover-preview"></div>
+    </section>
+
+   
+
+    <!-- CTA Section -->
+    <section id="cta" class="section-cta">
+      <div class="container">
+        <div class="cta-box-card">
+          <h2 class="cta-headline">Let's work<br><span style="color: var(--accent-blue);">together</span></h2>
+          <p class="cta-subtext">Work with us if average isn’t your thing. Drop it, we'll build it!</p>
+          <button id="cta-say-hello-btn" class="contact-submit-btn" data-cursor-hover="Say Hello">say hello &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-video-strip">
+        <div class="footer-vid-item">
+          <video autoplay loop muted playsinline src="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68dfa249c8ad1d2624abf3d5_Footer-Service-designV2-transcode.mp4"></video>
+        </div>
+        <div class="footer-vid-item">
+          <video autoplay loop muted playsinline src="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68dfa1926bb2adbd4315d488_Zefir%20footerV2-transcode.mp4"></video>
+        </div>
+        <div class="footer-vid-item">
+          <video autoplay loop muted playsinline src="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68dfa2440a49684a10b9e055_FOOTER%20-%20BRANDINGV2-transcode.mp4"></video>
+        </div>
+        <div class="footer-vid-item">
+          <video autoplay loop muted playsinline src="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68dfa20fc54b7796aaa5edf6_SILVR-Video%201%20footersV3-transcode.mp4"></video>
+        </div>
+      </div>
+
+      <div class="footer-main-row">
+        <div>
+          <div class="footer-brand-title">STUDIO NAMMA</div>
+          <p class="footer-desc">Creative studio building bold brands & clean Webflow platforms for ambitious companies.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#cta">Approach</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>SOCIALS</h4>
+          <ul>
+            <li><a href="mailto:hello@studionamma.com">hello@studionamma.com</a></li>
+            <li><a href="https://www.linkedin.com/company/studio-namma" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/studio.namma" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://dribbble.com/studionamma" target="_blank" rel="noopener">Dribbble</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Studio Namma. All rights reserved.</div>
+        <div>Gt Pressura Mono &bull; Mixtape Extra Condensed</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-card" class="cookie-floating-card">
+    <p>We care about your data, and we'd use cookies only to improve your experience. By using this website, you accept our policy.</p>
+    <button id="accept-cookie-btn" class="cookie-accept-btn">Accept cookies</button>
+  </div>
+
+  <!-- Master JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
