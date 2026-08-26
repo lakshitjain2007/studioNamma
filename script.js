@@ -32,6 +32,8 @@ function initPreloader() {
   }, 2000);
 }
 
+/* Dark lght theme switcher*/ 
+
 /* ==========================================
    2. Dark/Light Theme Switcher
    ========================================== */
