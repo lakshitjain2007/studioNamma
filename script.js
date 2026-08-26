@@ -340,6 +340,7 @@ function initCookieBanner() {
 
   acceptBtn.addEventListener('click', () => {
     card.classList.remove('active');
+    card.classList.remove('active');
     localStorage.setItem('namma_cookies', 'true');
   });
 }
