@@ -1028,6 +1028,10 @@ a, button, [role="button"], input[type="submit"] {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+ .footer-video-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 768px) {
   :root {
